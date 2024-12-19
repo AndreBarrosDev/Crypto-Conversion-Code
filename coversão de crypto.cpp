@@ -16,18 +16,18 @@ float converterDollar(float quantDoll, float cotdR) {
 int main() {
     float cryp, cotcd, doll, cotdr, real;
 
-    printf("Digite o saldo de sua crypto moeda:\n");
+    printf("Enter the amount of cryptocoins:\n");
     scanf("%f", &cryp);
-    printf("Digite o valor da moeda em Dollar:\n");
+    printf("Enter the value of the cryptocoin in Dollar:\n");
     scanf("%f", &cotcd);
     doll = converterCrypto(cryp, cotcd);
 
-    printf("Digite o valor do Dollar em Real:\n");
+    printf("Enter the dollar rate in your currency:\n");
     scanf("%f", &cotdr);
     real = converterDollar(doll, cotdr);
 
-    printf("\nSaldo em Dollar: %.2f", doll);
-    printf("\nSaldo em Real: %.2f", real);
+    printf("\n Balance in Dollars: %.2f", doll);
+    printf("\n Balance in your currency: %.2f", real);
 
     return 0;
 }
